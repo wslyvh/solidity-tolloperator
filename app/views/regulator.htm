@@ -1,0 +1,32 @@
+
+<h1>Regulator</h1>
+<div class="row">
+    <input type="text" class="form-control" placeholder="Add address.." data-ng-model="address" required>
+    <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="addAddress(address)">Add</button>
+</div>
+
+<div class="row">
+    <!-- Extra spacing. Fix in CSS/styling -->
+    <p>
+        <br />
+    </p>
+</div>
+<div class="row">
+
+    <div class="table-responsive">
+        <table class="table table-striped text-left">
+            <tr>
+                <th>Address</th>
+                <th>Balance</th>
+                <th>Transactions</th>
+                <th></th>
+            </tr>
+            <tr data-ng-repeat="acc in accounts track by $index">
+                <td><a href="https://etherscan.io/address/{{acc.address}}" target="_blank">{{acc.address}}</a></td>
+                <td>{{acc.balance}}</td>
+                <td>{{acc.transactionCount}}</td>
+                <td><a data-ng-click="deleteAddress($index)"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+            </tr>
+        </table>
+    </div>
+</div>

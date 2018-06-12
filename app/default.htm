@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html data-ng-app="TollBoothOperations">
+<head>
+    <title>Tollbooth Operations</title>
+    <meta charset="utf-8" />
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body ng-cloak>
+
+    <div class="container">
+        <div class="row">
+            <!-- Extra spacing. Fix in CSS/styling -->
+            <p>
+                <br />
+            </p>
+        </div>
+        <div data-ng-view=""></div>
+    </div>
+    <hr />
+
+    <!-- 3rd party libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.5.2/angular-local-storage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js"></script>
+    <script src="./scripts/web3.min.js"></script>
+
+    <!-- Load app main script -->
+    <script src="./scripts/app.js"></script>
+
+    <!-- Load controllers -->
+    <script src="./controllers/mainController.js"></script>
+</body>
+</html>
